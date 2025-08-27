@@ -1,0 +1,61 @@
+{
+    "layer": "top",
+    "output": [
+        "DP-2"
+    ],
+    "position": "top",
+    "mode": "dock",
+    "height": 10,
+    "exclusive": true,
+    "passthrough": false,
+    "reload_style_on_change": true,
+    "include": [
+        "$XDG_CONFIG_HOME/waybar/modules/*json*", 
+        "$XDG_CONFIG_HOME/waybar/includes/includes.json" 
+    ],
+    "modules-left": [
+        "group/pill#left"
+    ],
+    "group/pill#left": {
+        "orientation": "inherit",
+        "modules": [
+            "cpu","|",
+            "memory",
+            "idle_inhibitor",
+            "clock"
+        ]
+    },
+    "modules-center": [
+        "group/pill#center"
+    ],
+    "group/pill#center": {
+        "modules": [
+            "hyprland/workspaces",
+            "hyprland/window"
+        ],
+        "orientation": "inherit"
+    },
+    "modules-right": [
+        "group/pill#right"
+    ],
+    "group/pill#right": {
+        "modules": [
+            "backlight",
+            "network",
+            "pulseaudio",
+            "pulseaudio#microphone",
+            "custom/updates",
+            "custom/keybindhint",
+            "privacy",
+            "tray",
+            "battery",
+            "custom/wallchange",
+            "custom/theme",
+            "custom/wbar",
+            "custom/cliphist",
+            "custom/hyde-menu",
+            "custom/power"
+        ],
+        "orientation": "inherit"
+    }
+}
